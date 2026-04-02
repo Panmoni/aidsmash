@@ -140,3 +140,24 @@ Non-profits submit proposals with:
 
 ## 13. Conclusion
 AidSmash redefines non-profit fundraising by leveraging Solana, Rust smart contracts, and a Typescript-based frontend (Vite + React) to create a transparent, community-governed platform. With milestone-based funding, low entry barriers, and a reputation system, it empowers non-profits globally while ensuring donor trust and engagement. This document provides a clear roadmap for the MVP, balancing your vision with practical implementation steps to disrupt the non-profit sector in 2025 and beyond.
+
+
+
+
+----
+
+
+
+ong tiene que ser responsable.
+  - misión (metadata)
+  - representantes (personas)
+  - proyectos
+    - misión
+    - entregables
+    - plazo de tiempo
+    - hitos
+    - metadata como imagenes, una propuesta escrita, extensa, region geografica donde va a operar. 
+
+    newsletter
+
+usuarios (donante), dan fondos, quieren accountability.

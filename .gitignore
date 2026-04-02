@@ -1,0 +1,41 @@
+# Anchor
+.anchor
+target/
+test-ledger/
+
+# Node
+node_modules/
+dist/
+build/
+
+# IDL
+**/target/idl/
+**/target/types/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Environment
+.env
+.env.local
+.env*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Solana
+.config/
+keypairs/
+*.json
+!package.json
+!tsconfig.json
+!Anchor.toml

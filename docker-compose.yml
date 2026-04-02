@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  # Entorno de desarrollo con todas las herramientas
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: aidsmash-dev
+    volumes:
+      # Montar el código fuente
+      - .:/workspace
+      # Persistir caché de Cargo para builds más rápidos
+      - cargo-cache:/home/solana/.cargo/registry
+      - cargo-git:/home/solana/.cargo/git
+      # Persistir configuración de Solana y wallets
+      - solana-config:/home/solana/.config/solana
+    ports:
+      # Vite dev server
+      - "5173:5173"
+      # Solana local validator
+      - "8899:8899"
+      # WebSocket para Solana
+      - "8900:8900"
+      # Anchor test validator
+      - "8080:8080"
+    stdin_open: true
+    tty: true
+    working_dir: /workspace
+    command: /bin/bash
+
+volumes:
+  cargo-cache:
+  cargo-git:
+  solana-config:
